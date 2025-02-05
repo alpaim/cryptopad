@@ -16,7 +16,7 @@ createRoot(document.getElementById("root")!).render(
             autoClose={2_500}
             hideProgressBar
             newestOnTop={false}
-            closeOnClick={false}
+            closeOnClick={true}
             rtl={false}
             pauseOnFocusLoss
             draggable={false}
