@@ -46,7 +46,7 @@ export const Cryptopad: FC = () => {
     }, [theirPublicKey, message, keypair, activeTab]);
 
     return (
-        <main className={"min-h-screen bg-gray-100 py-8"}>
+        <main className="min-h-screen bg-gray-100 py-8">
             <div className="container mx-auto p-4">
                 <div className="bg-white shadow-md rounded-lg w-full max-w-2xl mx-auto">
                     <div className="p-6">
