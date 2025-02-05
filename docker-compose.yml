@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  cryptopad:
+    container_name: cryptopad
+    image: ghcr.io/alpaim/cryptopad:latest
+    #    build: .
+    ports:
+      - "80:80"
+    networks:
+      - cryptopadNetwork
+
+networks:
+  cryptopadNetwork:
+    name: cryptopadNetwork
