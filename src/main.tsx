@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { Cryptopad } from "./components/Cryptopad.tsx";
 import { CryptoWorker } from "./components/CryptoWorker.tsx";
-import { Bounce, ToastContainer } from "react-toastify";
+import { Toaster } from "sonner";
 import "./index.css";
 
 createRoot(document.getElementById("root")!).render(
@@ -11,19 +11,6 @@ createRoot(document.getElementById("root")!).render(
 
         <Cryptopad />
 
-        <ToastContainer
-            position="bottom-right"
-            autoClose={2_500}
-            hideProgressBar
-            newestOnTop={false}
-            closeOnClick={true}
-            limit={5}
-            rtl={false}
-            pauseOnFocusLoss
-            draggable={false}
-            pauseOnHover
-            theme="dark"
-            transition={Bounce}
-        />
+        <Toaster />
     </StrictMode>,
 );

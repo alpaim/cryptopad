@@ -5,7 +5,7 @@ import { RefreshCcw } from "lucide-react";
 import { encrypt } from "../lib/crypto/encrypt.ts";
 import { decrypt } from "../lib/crypto/decrypt.ts";
 import { TabToggle } from "./TabToggle.tsx";
-import { toast } from "react-toastify";
+import { toast } from "sonner";
 import { copyToClipboard } from "../lib/utlis/copyToClipboard.ts";
 
 export const Cryptopad: FC = () => {
